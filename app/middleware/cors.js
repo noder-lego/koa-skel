@@ -1,3 +1,5 @@
+'use strict'
+
 const cors = require('@koa/cors');
 
 module.exports = cors({
@@ -8,13 +10,15 @@ module.exports = cors({
             if (allows.includes(ctx.request.header.origin)) {
                 return ctx.request.header.origin;
             }
-        } else {
-            return '';
         }
+        return '';
     },
-    // methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    // headers: ['Content-Type', 'Authorization'],
-    // exposedHeaders: ['X-Total-Count'],
+    // allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH',
+    // exposeHeaders: ['Content-Type', 'Authorization'],
+    // allowHeaders: ['X-Total-Count'],
+    // maxAge: 3600,
     // credentials: true,
-    // maxAge: 3600
+    // keepHeadersOnError: false,
+    // secureContext: false,
+    // privateNetworkAccess: false
 });

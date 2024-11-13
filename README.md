@@ -1,6 +1,6 @@
 # koa-skel
 
-This is a koa based skeleton for fast developing.
+A koa based skeleton for fast developing.
 
 ```bash
 # Install dependent
@@ -12,3 +12,10 @@ $ node index.js
 # Access api
 $ curl http://localhost:7100/info/index
 ```
+
+## Stuctures
+
+Structure is similar with eggjs.
+
+
+

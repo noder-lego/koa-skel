@@ -1,10 +1,13 @@
 'use strict'
 
-class SiteController {
-    async index(ctx, next) {
+const Controller = require('../controller.js')
+
+class SiteController extends Controller {
+    async index() {
+        let { ctx } = this
         ctx.body = 'this is site index'
     }
-    
+
 }
 
-module.exports = new SiteController
+module.exports = SiteController
