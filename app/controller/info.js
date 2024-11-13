@@ -1,6 +1,6 @@
 'use strict'
 
-const Controller = require('../controller.js')
+const { Controller } = require('../controller.js')
 
 class InfoController extends Controller {
     async index() {
