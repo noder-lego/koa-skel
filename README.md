@@ -13,9 +13,9 @@ $ node index.js
 $ curl http://localhost:7100/info/index
 ```
 
-## Stuctures
+## structure
 
-Structure is similar with eggjs.
+Dir structure is similar with eggjs `npm init egg --type=simple`.
 
 
 
